@@ -18,9 +18,9 @@ public class Customer {
 		this.birthDate = bd;
 	}
 
-	ArrayList<Integer> acc = new ArrayList<>();
-	ArrayList<Integer> mort = new ArrayList<>();
-	ArrayList<Integer> transaction = new ArrayList<>();
+	ArrayList<Account> acc = new ArrayList<>();
+	ArrayList<MortgageAccount> mort = new ArrayList<>();
+	ArrayList<Transaction> transaction = new ArrayList<>();
 
 
 
@@ -92,7 +92,13 @@ public class Customer {
 	}
 
 	public Account lookUpAccount(int id){
-		return x;
+		Account acc1 = null;
+		for (int i = 0; i < acc.size(); i++){
+			if (acc.get(i).getAccID() == id ){
+				acc1 = acc.get(i);
+			}
+		}
+		return acc1;
 	}
 
 }

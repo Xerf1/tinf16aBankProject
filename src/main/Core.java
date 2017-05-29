@@ -92,8 +92,21 @@ public class Core {
 
     	}
 
-    	public void transAct(int fromID, int targetID, int pin, double value){
+    	public void transaction(int fromID, int targetID, int pin, double value){
+			Account from;
+			Account target;
 
+    		if (currentID == 0){
+				/*Error Message*/
+			}
+			else{
+				for (int i = 0; i < customers.size(); i++){
+					from = customers.get(i).lookUpAccount(fromID);
+				}
+				for (int i = 0; i < customers.size(); i++){
+					target = customers.get(i).lookUpAccount(targetID);
+				}
+			}
     	}
 	
 	
