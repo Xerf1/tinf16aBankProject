@@ -1,12 +1,12 @@
 package main;
 import java.time.LocalDate;
-import java.util.Date;
+import java.util.*;
 
 public class Customer {
 	
-	private int customerID;	
-	private String password;
-	private String name;
+	protected int customerID;
+	protected String password;
+	private String firstName;
 	private String lastName;
 	private int age;
 	private String birthDate;
@@ -14,23 +14,25 @@ public class Customer {
 	public Customer(String pw, String ln, String n, String bd){
 		this.password = pw;
 		this.lastName = ln;
-		this.name = n;
+		this.firstName = n;
 		this.birthDate = bd;
-		//setAge konvertieren
 	}
 
-	public int getCustomerID() {
-		return customerID;
-	}
+	ArrayList<Integer> acc = new ArrayList<>();
+	ArrayList<Integer> mort = new ArrayList<>();
+	ArrayList<Integer> transaction = new ArrayList<>();
+
+
+
 	public void setCustomerID(int customerID) {
 		this.customerID = customerID;
 	}
 
-	public String getName() {
-		return name;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setfirstName(String name) {
+		this.firstName = name;
 	}
 
 	public String getLastName() {
@@ -43,22 +45,13 @@ public class Customer {
 	public int getAge() {
 		return age;
 	}
-	public void setAge(int age) {
-		this.age = age;
-	}
 
 	public String getBirthDate() {
 		return birthDate;
 	}
-	public void setBirthDate(String birthDate) {
-		this.birthDate = birthDate;
-	}
 
 	public String getPassword() {
 		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	
@@ -70,15 +63,36 @@ public class Customer {
 	public void addMortage(){
 	}
 
-	public void delAcc(){
+	public void delAcc(int accID){
 	}
 
-	public void query(){
+	public void getBalance(int accID, int pin){
 	}
 
-	public void deposit(){
+	public void getAllBalance(int accID){
+
 	}
 
-	public void widthDrawl(){
+	public void deposit(double value, int pin, int accID){
 	}
+
+	public void widthDrawl(double value, int pin, int accID){
+	}
+
+	public Transaction getTransaction(int index){
+		return x;
+	}
+
+	public int countTransactions(){
+		return x;
+	}
+
+	public void transaction(Core.Account from, Core.Account target, double amount){
+
+	}
+
+	public Core.Account lookUpAccount(int id){
+		return x;
+	}
+
 }
