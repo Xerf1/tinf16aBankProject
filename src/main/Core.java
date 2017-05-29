@@ -4,28 +4,98 @@ import java.util.ArrayList;
 
 public class Core {
 	
-	int id=10000;
+	static int id=10000;
 	ArrayList<Customer> customers = new ArrayList<Customer>();
+	private int currentID;
+	private String currentPassword;
+	
 	
 	public Core(){
 	}
 	
-	public void SignUp(String pw, String ln, String n, String bd){
-		Customer c = new Customer(pw, ln, n, bd);
+
+	public void addAcc(){
+
+    	}
+
+ 	public void addMortage(){
+
+    	}
+
+    	public void delAcc(int accID, String password){
+
+    	}
+
+    	public void deposit(double value, int pin, int accID){
+
+    	}
+
+    	public String query(int pin, int accID){
+
+        	return "";
+    	}
+
+    	public void withDr(double value, int pin, int accID){
+
+    	}
+
+    	public String listAcc(int customer){
+
+        	return "";
+    	}
+
+    	public String showAll(int manPin){
+
+        	return "";
+    	}
+
+    	public boolean signIn(String password, int customerID){
+        	return false;
+    	}
+
+    	public void signUp(String password, String lastname, String firstname, String birthDate, int age){
+		Customer c = new Customer( password, lastname, firstname, birthDate, age);
 		c.setCustomerID(id);
 		customers.add(c);
-		generateID();
-	}
-	public void generateID(){
 		this.id++;
-	}
-	public int getCurrentID(){
-		return this.id;
-	}
+    	}
+
+    	public String translog(){
+        	return "";
+    	}
+
+    	private void setCurrentID(int id){
+        	this.currentID=id;
+    	}
+
+    	private void setCurrentPassword(String password){
+        	this.currentPassword=password;
+    	}
+
+    	public void logOut(){
+
+    	}
+
+    	public int askGuardian(){
+        	return 0;
+    	}
+
+    	public int askAccType(){
+        	return 0;
+    	}
+
+    	public int askMortgage(){
+        	return 0;
+    	}
+
+    	public void message(String mess){
+
+    	}
+
+    	public void transAct(int fromID, int targetID, int pin, double value){
+    		
+    	}
 	
-	public boolean signIn(String pw, int id){
-		boolean test= false;
-		
-		return test;
-	}
+	
+	
 }
