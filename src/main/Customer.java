@@ -87,11 +87,11 @@ public class Customer {
 		return x;
 	}
 
-	public void transaction(Core.Account from, Core.Account target, double amount){
+	public void transaction(Account from, Account target, double amount){
 
 	}
 
-	public Core.Account lookUpAccount(int id){
+	public Account lookUpAccount(int id){
 		return x;
 	}
 
