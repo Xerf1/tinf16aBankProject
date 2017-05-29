@@ -1,81 +1,26 @@
 package main;
 
 
+import java.time.LocalDateTime;
+
 public class Transaction {
-
-		
-		/**
-		 */
-		public Transaction(){
-		}
-
-		/**
-		 * @uml.property  name="amount"
-		 */
+	
 		private double amount;
-
-		/**
-		 * Getter of the property <tt>amount</tt>
-		 * @return  Returns the amount.
-		 * @uml.property  name="amount"
-		 */
-		public double getAmount() {
-			return amount;
-		}
-
-		/**
-		 * Setter of the property <tt>amount</tt>
-		 * @param amount  The amount to set.
-		 * @uml.property  name="amount"
-		 */
-		public void setAmount(double amount) {
-			this.amount = amount;
-		}
-
-		/**
-		 * @uml.property  name="transactionTime"
-		 */
-		private double transactionTime;
-
-		/**
-		 * Getter of the property <tt>transactionTime</tt>
-		 * @return  Returns the transactionTime.
-		 * @uml.property  name="transactionTime"
-		 */
-		public double getTransactionTime() {
-			return transactionTime;
-		}
-
-		/**
-		 * Setter of the property <tt>transactionTime</tt>
-		 * @param transactionTime  The transactionTime to set.
-		 * @uml.property  name="transactionTime"
-		 */
-		public void setTransactionTime(double transactionTime) {
-			this.transactionTime = transactionTime;
-		}
-
-		/**
-		 * @uml.property  name="transType"
-		 */
+		private LocalDateTime transactionTime;
 		private String transType;
+		private Account from;
+		private Account target;
 
-		/**
-		 * Getter of the property <tt>transType</tt>
-		 * @return  Returns the transType.
-		 * @uml.property  name="transType"
-		 */
-		public String getTransType() {
-			return transType;
+		public Transaction(Account from, Account target, double amount){
+			this.amount = amount;
+			this.transactionTime = LocalDateTime.now();
+			this.target = target;
+			this.from = from;
 		}
 
-		/**
-		 * Setter of the property <tt>transType</tt>
-		 * @param transType  The transType to set.
-		 * @uml.property  name="transType"
-		 */
-		public void setTransType(String transType) {
-			this.transType = transType;
+		public String getInfo(){
+			return ("Transacted "+amount+" at " + transactionTime + " from " + from.accID + " to " + target.accID);
 		}
+
 
 }
