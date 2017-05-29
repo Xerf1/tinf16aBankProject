@@ -93,7 +93,7 @@ public class Core {
     	}
 
     	public void transAct(int fromID, int targetID, int pin, double value){
-    		
+
     	}
 	
 	
