@@ -27,7 +27,7 @@ public class SignUp extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					SignUp frame = new SignUp();
+					SignUp frame = new SignUp(core);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,11 +37,11 @@ public class SignUp extends JFrame {
 	}
 	
 
-	Core core;
+	static Core core;
 	private JLabel lblID;
 	
-	public SignUp() {
-		core = new Core();
+	public SignUp(Core c) {
+		core = c;
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 452, 421);
@@ -55,11 +55,11 @@ public class SignUp extends JFrame {
 		contentPane.add(lblName);
 		
 		JLabel lblLastname = new JLabel("Lastname");
-		lblLastname.setBounds(57, 100, 69, 20);
+		lblLastname.setBounds(57, 122, 69, 20);
 		contentPane.add(lblLastname);
 		
 		JLabel lblBirthDate = new JLabel("Birth date");
-		lblBirthDate.setBounds(57, 154, 69, 20);
+		lblBirthDate.setBounds(57, 194, 69, 20);
 		contentPane.add(lblBirthDate);
 		
 		JLabel lblPassword = new JLabel("Password");
@@ -84,12 +84,12 @@ public class SignUp extends JFrame {
 		contentPane.add(btnSubmit);
 		
 		tfBirthDate = new JTextField();
-		tfBirthDate.setBounds(170, 151, 146, 26);
+		tfBirthDate.setBounds(170, 191, 146, 26);
 		contentPane.add(tfBirthDate);
 		tfBirthDate.setColumns(10);
 		
 		tfLastName = new JTextField();
-		tfLastName.setBounds(170, 97, 146, 26);
+		tfLastName.setBounds(170, 119, 146, 26);
 		contentPane.add(tfLastName);
 		tfLastName.setColumns(10);
 		

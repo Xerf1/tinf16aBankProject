@@ -93,7 +93,7 @@ public class Hauptfenster extends JFrame {
 		btnSignUp.setBackground(Color.DARK_GRAY);
 		btnSignUp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				SignUp s = new SignUp();
+				SignUp s = new SignUp(core);
 				s.setVisible(true);
 			}
 		});
@@ -110,15 +110,20 @@ public class Hauptfenster extends JFrame {
 		tfID.setText(null);
 	}
 	public void checkValues(){
-		boolean check = core.signIn(tfPassword.getText(), Integer.parseInt(tfID.getText()));
-		if(check){
-			JOptionPane.showMessageDialog(null, "logged in");
-			Menue frame = new Menue();
-			frame.setVisible(true);
-			empty();
+		if(!tfID.getText().equals("")){
+			int id = Integer.parseInt(tfID.getText());
+			boolean check = core.signIn(tfPassword.getText(), id);
+			if(check){
+				JOptionPane.showMessageDialog(null, "logged in");
+				Menue frame = new Menue();
+				frame.setVisible(true);
+				empty();
+			}else{
+				JOptionPane.showMessageDialog(null, "failure, try again");
+				empty();
+			}
 		}else{
-			JOptionPane.showMessageDialog(null, "failure, try again");
-			empty();
+			JOptionPane.showMessageDialog(null, "Please enter a valid ID");
 		}
 	}
 }
