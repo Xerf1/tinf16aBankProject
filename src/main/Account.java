@@ -2,145 +2,66 @@ package main;
 
 
 public abstract class Account {
-
-	/**
-	 * @uml.property  name="accID"
-	 */
 	protected int accID;
+	protected double balance;
+	protected double creditLimit;
+	protected int pin;
+	protected double interestRate;
+	protected Customer owner;
 
-	/**
-	 * Getter of the property <tt>accID</tt>
-	 * @return  Returns the accID.
-	 * @uml.property  name="accID"
-	 */
-	public int getAccID() {
+	public Account(int pAccID, double pBalance, double pCreditLimit,int pPin, double pInterestRate, Customer pOwner){
+		accID=pAccID;
+		balance=pBalance;
+		pCreditLimit=pCreditLimit;
+		pin=pPin;
+		interestRate=pInterestRate;
+		owner=pOwner;
+	}
+
+	public void deposit(double value){
+		balance=balance+value;
+	}
+
+	public boolean checkPin(int pPin) {
+		if (pin==pPin)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public void withDr(double value){
+		if(balance-value >0) {
+			balance = balance - value;
+		}
+	}
+
+	public int getAccID(){
 		return accID;
 	}
 
-	/**
-	 * Setter of the property <tt>accID</tt>
-	 * @param accID  The accID to set.
-	 * @uml.property  name="accID"
-	 */
-	public void setAccID(int accID) {
-		this.accID = accID;
-	}
-
-	/**
-	 * @uml.property  name="balance"
-	 */
-	protected double balance;
-
-	/**
-	 * Getter of the property <tt>balance</tt>
-	 * @return  Returns the balance.
-	 * @uml.property  name="balance"
-	 */
-	public String getBalance() {
-		return balance;
-	}
-
-	/**
-	 * Setter of the property <tt>balance</tt>
-	 * @param balance  The balance to set.
-	 * @uml.property  name="balance"
-	 */
-	public void setBalance(double balance) {
-		this.balance = balance;
-	}
-
-	/**
-	 * @uml.property  name="creditLimit"
-	 */
-	protected double creditLimit;
-
-	/**
-	 * Getter of the property <tt>creditLimit</tt>
-	 * @return  Returns the creditLimit.
-	 * @uml.property  name="creditLimit"
-	 */
-	public double getCreditLimit() {
+	public double getCreditLimit(){
 		return creditLimit;
 	}
 
-	/**
-	 * Setter of the property <tt>creditLimit</tt>
-	 * @param creditLimit  The creditLimit to set.
-	 * @uml.property  name="creditLimit"
-	 */
-	public void setCreditLimit(double creditLimit) {
-		this.creditLimit = creditLimit;
-	}
+	public Customer getOwner(){
 
-	/**
-	 * @uml.property  name="owner"
-	 */
-	protected Customer owner;
-
-	/**
-	 * Getter of the property <tt>owner</tt>
-	 * @return  Returns the owner.
-	 * @uml.property  name="owner"
-	 */
-	public Customer getOwner() {
 		return owner;
 	}
 
-	/**
-	 * Setter of the property <tt>owner</tt>
-	 * @param owner  The owner to set.
-	 * @uml.property  name="owner"
-	 */
-	public void setOwner(Customer owner) {
-		this.owner = owner;
+	public double getBalance(){
+		return balance;
+	}
+	public void setBalance(double pBalance){
+		balance=pBalance;
 	}
 
-		
-		/**
-		 */
-		public Account(Customer owner){
-			this.owner=owner;
-		}
+	public void setInterestRate(double pRate) {
+		interestRate=pRate;
+	}
 
-		/**
-		 * Getter of the property <tt>pin</tt>
-		 * @return  Returns the pin1.
-		 * @uml.property  name="pin"
-		 */
-		public int getPin() {
-			return pin1;
-		}
-
-		/**
-		 * @uml.property  name="pin"
-		 */
-		protected int pin1;
-
-		/**
-		 * Setter of the property <tt>pin</tt>
-		 * @param pin  The pin1 to set.
-		 * @uml.property  name="pin"
-		 */
-		public void setPin(int pin) {
-			pin1 = pin;
-		}
-
-			
-			/**
-			 */
-			public void deposed(){
-			}
-
-				
-				/**
-				 */
-				public void widthDrawal(){
-				}
-
-					
-					/**
-					 */
-					public void query(){
-					}
+	public void setPin( int pPin){
+		pin=pPin;
+	}
 
 }
