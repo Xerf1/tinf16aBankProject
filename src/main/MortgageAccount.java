@@ -40,6 +40,9 @@ public abstract class MortgageAccount {
 		return repayPenalty;
 	}
 
+	public String createReport(){
+		return x;
+	}
 
 
 }
