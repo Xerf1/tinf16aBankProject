@@ -2,27 +2,23 @@ package main;
 
 
 public class JuniorAccount extends Account {
-
-	/**
-	 * @uml.property  name="guardian"
-	 */
 	private Customer guardian;
 
-	/**
-	 * Getter of the property <tt>guardian</tt>
-	 * @return  Returns the guardian.
-	 * @uml.property  name="guardian"
-	 */
+	public JuniorAccount(int pAccID, double pBalance, double pCreditLimit,int pPin, double pInterestRate, Customer pOwner, Customer pGuardian){
+		super(pAccID,pBalance,pCreditLimit,pPin,pInterestRate,pOwner);
+		guardian=pGuardian;
+	}
+
+
+
 	public Customer getGuardian() {
+
 		return guardian;
 	}
 
-	/**
-	 * Setter of the property <tt>guardian</tt>
-	 * @param guardian  The guardian to set.
-	 * @uml.property  name="guardian"
-	 */
+
 	public void setGuardian(Customer guardian) {
+
 		this.guardian = guardian;
 	}
 
