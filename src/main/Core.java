@@ -54,7 +54,7 @@ public class Core {
     	}
 
     	public void signUp(String password, String lastname, String firstname, String birthDate, int age){
-		Customer c = new Customer( password, lastname, firstname, birthDate, age);
+		Customer c = new Customer( password, lastname, firstname, birthDate);
 		c.setCustomerID(id);
 		customers.add(c);
 		this.id++;

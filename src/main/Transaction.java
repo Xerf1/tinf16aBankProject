@@ -4,7 +4,7 @@ package main;
 import java.time.LocalDateTime;
 
 public class Transaction {
-	
+
 		private double amount;
 		private LocalDateTime transactionTime;
 		private String transType;
