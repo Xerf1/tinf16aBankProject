@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="(default package)" size="1406,560" id="" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D313030302042616E6B53696D756C6174696F6E2F7363686C6970666D">
+  <children xsi:type="editmodel:ClassEditModel" name="Customer" location="30,40" size="149,357" id="/Customer" runTimeClassModel="setName,lastName,setPassword,deposit(),query(),addAcc(),setBirthDate,birthDate,Customer(),delAcc(),widthDrawl(),setLastName,password,addMortage(),customerID,name,age">
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,120">
+      <children xsi:type="editmodel:AttributeEditModel" name="age" id="/Customer#age"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="birthDate" id="/Customer#birthDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="customerID" id="/Customer#customerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lastName" id="/Customer#lastName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="/Customer#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="password" id="/Customer#password"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,180">
+      <children xsi:type="editmodel:MethodEditModel" name="Customer" id="/Customer#Customer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addAcc" id="/Customer#addAcc()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addMortage" id="/Customer#addMortage()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delAcc" id="/Customer#delAcc()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deposit" id="/Customer#deposit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="query" id="/Customer#query()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLastName" id="/Customer#setLastName"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setName" id="/Customer#setName"/>
+      <children xsi:type="editmodel:MethodEditModel" name="widthDrawl" id="/Customer#widthDrawl()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/Account@account+/Customer@customer" source="//@children.0" target="//@children.6" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,18" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="customer" location="149,106" id="/Account@account+/Customer@customer|/Customer#customer" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="account" location="0,131" id="/Account@account+/Customer@customer|/Account#account"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CurrentAccount" location="664,285" size="192,37" id="/CurrentAccount" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="/Account&lt;-/CurrentAccount" source="//@children.1" target="//@children.6" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="154,214"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="JuniorAccount" location="490,330" size="180,67" id="/JuniorAccount" runTimeClassModel="guardian">
+    <children xsi:type="editmodel:CompartmentEditModel" size="156,20">
+      <children xsi:type="editmodel:AttributeEditModel" name="guardian" id="/JuniorAccount#guardian"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="/Account&lt;-/JuniorAccount" source="//@children.2" target="//@children.6" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="107,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="72,237"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CorporateSavings" location="435,405" size="212,37" id="/CorporateSavings" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="/Account&lt;-/CorporateSavings" source="//@children.3" target="//@children.6" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="150,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="60,237"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="StudentSavings" location="360,285" size="191,37" id="/StudentSavings" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="/Account&lt;-/StudentSavings" source="//@children.4" target="//@children.6" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="177,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="12,211"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Transaction" location="1025,80" size="207,157" id="/Transaction" runTimeClassModel="amount,transType,setTransType,Transaction(),transactionTime">
+    <children xsi:type="editmodel:CompartmentEditModel" size="184,60">
+      <children xsi:type="editmodel:AttributeEditModel" name="amount" id="/Transaction#amount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="transType" id="/Transaction#transType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="transactionTime" id="/Transaction#transactionTime"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,40">
+      <children xsi:type="editmodel:MethodEditModel" name="Transaction" id="/Transaction#Transaction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTransType" id="/Transaction#setTransType"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/Account@account+/Transaction@transaction" source="//@children.5" target="//@children.6" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,18" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="transaction" location="0,78" id="/Account@account+/Transaction@transaction|/Transaction#transaction" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="account" location="170,143" id="/Account@account+/Transaction@transaction|/Account#account"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.3/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.0/@sourceConnections.0 //@children.5/@sourceConnections.0" name="Account" location="525,15" size="170,237" id="/Account" runTimeClassModel="owner,widthDrawal(),balance,pin,query(),Account(LCustomer;),accID,creditLimit,deposed(),setBalance">
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,100">
+      <children xsi:type="editmodel:AttributeEditModel" name="accID" id="/Account#accID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="balance" id="/Account#balance"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="creditLimit" id="/Account#creditLimit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="owner" id="/Account#owner"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pin" id="/Account#pin"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,80">
+      <children xsi:type="editmodel:MethodEditModel" name="Account" id="/Account#Account(LCustomer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deposed" id="/Account#deposed()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="query" id="/Account#query()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="widthDrawal" id="/Account#widthDrawal()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.0 //@children.10/@sourceConnections.0" name="MortgageAccount" location="974,270" size="210,127" id="/MortgageAccount" runTimeClassModel="interestRate,limit,apllicationFee,repayPenalty">
+    <children xsi:type="editmodel:CompartmentEditModel" size="172,80">
+      <children xsi:type="editmodel:AttributeEditModel" name="apllicationFee" id="/MortgageAccount#apllicationFee"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="interestRate" id="/MortgageAccount#interestRate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="limit" id="/MortgageAccount#limit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="repayPenalty" id="/MortgageAccount#repayPenalty"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Manager" location="225,405" size="124,97" id="/Manager" runTimeClassModel="setPassword,password,Manager()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,20">
+      <children xsi:type="editmodel:AttributeEditModel" name="password" id="/Manager#password"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,20">
+      <children xsi:type="editmodel:MethodEditModel" name="Manager" id="/Manager#Manager()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="FixedMort" location="1095,420" size="137,37" id="/FixedMort" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="/MortgageAccount&lt;-/FixedMort" source="//@children.9" target="//@children.7" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="44,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="165,127"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DiscMort" location="945,420" size="127,37" id="/DiscMort" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="/MortgageAccount&lt;-/DiscMort" source="//@children.10" target="//@children.7" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="48,127"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ExternalProduct" location="1170,345" size="195,37" id="/ExternalProduct" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GUI" location="765,235" size="157,257" id="/GUI" runTimeClassModel="delCust(),deposit(),quary(),addAcc(),withDrawl(),addCust(),listAll(),showTransLog(),delAcc(),listAcc()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,200">
+      <children xsi:type="editmodel:MethodEditModel" name="addAcc" id="/GUI#addAcc()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addCust" id="/GUI#addCust()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delAcc" id="/GUI#delAcc()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delCust" id="/GUI#delCust()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deposit" id="/GUI#deposit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listAcc" id="/GUI#listAcc()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listAll" id="/GUI#listAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="quary" id="/GUI#quary()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showTransLog" id="/GUI#showTransLog()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="withDrawl" id="/GUI#withDrawl()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
