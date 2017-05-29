@@ -7,16 +7,13 @@ public class Core {
 	static int id=10000;
 	ArrayList<Customer> customers = new ArrayList<Customer>();
 	private int currentID;
-    	private String currentPassword;
+	private String currentPassword;
 	
 	
 	public Core(){
 	}
 	
-	public int getCurrentID(){
-		return this.id;
-	}
-	
+
 	public void addAcc(){
 
     	}
@@ -96,7 +93,7 @@ public class Core {
     	}
 
     	public void transAct(int fromID, int targetID, int pin, double value){
-
+    		
     	}
 	
 	
